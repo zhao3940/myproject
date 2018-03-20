@@ -1,0 +1,21 @@
+GAIN:  A : 0.0
+GAIN:  B : 0.0
+BEST: 0.0 ['A', 'B']
+
+GAIN:  B : 1.0
+BEST: 1.0 ['B']
+
+GAIN:  B : 1.0
+BEST: 1.0 ['B']
+
+A=False
+   B=False
+      False
+   B=True
+      True
+A=True
+   B=False
+      True
+   B=True
+      False
+['A', {'False': ['B', {'False': ['Ans', 'False'], 'True': ['Ans', 'True']}], 'True': ['B', {'False': ['Ans', 'True'], 'True': ['Ans', 'False']}]}]

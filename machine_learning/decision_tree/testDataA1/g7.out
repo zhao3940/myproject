@@ -1,0 +1,21 @@
+GAIN:  Outlook : 0.0122
+GAIN:  Temp : 0.6523
+GAIN:  Humidity : 0.5857
+GAIN:  Wind : 0.1154
+BEST: 0.6523 ['Temp']
+
+GAIN:  Outlook : 0.3167
+GAIN:  Humidity : 0.65
+GAIN:  Wind : 0.1909
+BEST: 0.65 ['Humidity']
+
+Temp=Cool
+   Play
+Temp=Warm
+   Humidity=Dry
+      Play
+   Humidity=Humid
+      Noplay
+Temp=Hot
+   Noplay
+['Temp', {'Hot': ['Ans', 'Noplay'], 'Warm': ['Humidity', {'Humid': ['Ans', 'Noplay'], 'Dry': ['Ans', 'Play']}], 'Cool': ['Ans', 'Play']}]

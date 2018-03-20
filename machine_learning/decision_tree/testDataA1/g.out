@@ -1,0 +1,31 @@
+GAIN:  Outlook : 0.2473
+GAIN:  Temp : 0.0282
+GAIN:  Humidity : 0.0257
+GAIN:  Wind : 0.1383
+BEST: 0.2473 ['Outlook']
+
+GAIN:  Temp : 0.571
+GAIN:  Humidity : 0.971
+GAIN:  Wind : 0.02
+BEST: 0.971 ['Humidity']
+
+GAIN:  Temp : 0.0
+GAIN:  Humidity : 0.1909
+GAIN:  Wind : 1.0
+BEST: 1.0 ['Wind']
+
+Outlook=Sunny
+   Humidity=Dry
+      Play
+   Humidity=Humid
+      Noplay
+Outlook=Overcast
+   Play
+Outlook=Rain
+   Wind=Calm
+      Play
+   Wind=Breezy
+      Noplay
+   Wind=Windy
+      Noplay
+['Outlook', {'Rain': ['Wind', {'Windy': ['Ans', 'Noplay'], 'Breezy': ['Ans', 'Noplay'], 'Calm': ['Ans', 'Play']}], 'Overcast': ['Ans', 'Play'], 'Sunny': ['Humidity', {'Humid': ['Ans', 'Noplay'], 'Dry': ['Ans', 'Play']}]}]

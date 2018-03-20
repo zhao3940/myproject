@@ -1,0 +1,23 @@
+GAIN:  Income : 0.9222
+GAIN:  Age : 0.7873
+GAIN:  Education : 1.1058
+GAIN:  MatStat : 0.2704
+BEST: 1.1058 ['Education']
+
+GAIN:  Income : 1.0
+GAIN:  Age : 0.1909
+GAIN:  MatStat : 1.0
+BEST: 1.0 ['Income', 'MatStat']
+
+Education=HighSchool
+   Low
+Education=College
+   Medium
+Education=University
+   Income=Low
+      Low
+   Income=Medium
+      None
+   Income=High
+      High
+['Education', {'HighSchool': ['Ans', 'Low'], 'University': ['Income', {'Low': ['Ans', 'Low'], 'High': ['Ans', 'High'], 'Medium': ['Ans', 'None']}], 'College': ['Ans', 'Medium']}]

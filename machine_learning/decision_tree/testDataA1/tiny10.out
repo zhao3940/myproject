@@ -1,0 +1,17 @@
+GAIN:  cat : 0.306
+GAIN:  dog : 0.4696
+BEST: 0.4696 ['dog']
+
+GAIN:  cat : 0.571
+BEST: 0.571 ['cat']
+
+***  out of features ***
+***  out of features ***
+dog=yes
+   cat=yes
+      sad
+   cat=no
+      happy
+dog=no
+   sad
+['dog', {'yes': ['cat', {'yes': ['Ans', 'sad'], 'no': ['Ans', 'happy']}], 'no': ['Ans', 'sad']}]

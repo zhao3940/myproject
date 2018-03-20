@@ -1,0 +1,15 @@
+GAIN:  cat : 0.5
+GAIN:  dog : 1.0
+BEST: 1.0 ['dog']
+
+GAIN:  cat : 1.0
+BEST: 1.0 ['cat']
+
+dog=yes
+   cat=yes
+      angry
+   cat=no
+      happy
+dog=no
+   sad
+['dog', {'no': ['Ans', 'sad'], 'yes': ['cat', {'no': ['Ans', 'happy'], 'yes': ['Ans', 'angry']}]}]

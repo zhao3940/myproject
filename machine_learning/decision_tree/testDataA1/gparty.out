@@ -1,0 +1,25 @@
+GAIN:  Deadline : 0.5345
+GAIN:  Party : 1.0
+GAIN:  Lazy : 0.21
+BEST: 1.0 ['Party']
+
+GAIN:  Deadline : 0.971
+GAIN:  Lazy : 0.42
+BEST: 0.971 ['Deadline']
+
+GAIN:  Lazy : 1.0
+BEST: 1.0 ['Lazy']
+
+Party=No
+   Deadline=None
+      Pub
+   Deadline=Near
+      Lazy=No
+         Study
+      Lazy=Yes
+         TV
+   Deadline=Urgent
+      Study
+Party=Yes
+   Party
+['Party', {'Yes': ['Ans', 'Party'], 'No': ['Deadline', {'Urgent': ['Ans', 'Study'], 'Near': ['Lazy', {'Yes': ['Ans', 'TV'], 'No': ['Ans', 'Study']}], 'None': ['Ans', 'Pub']}]}]

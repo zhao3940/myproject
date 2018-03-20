@@ -1,0 +1,62 @@
+GAIN:  Alt : 0.0
+GAIN:  Bar : 0.0
+GAIN:  Fri : 0.0207
+GAIN:  Hun : 0.1957
+GAIN:  Pat : 0.5409
+GAIN:  Price : 0.1957
+GAIN:  Rain : 0.0207
+GAIN:  Res : 0.0207
+GAIN:  Type : 0.0
+GAIN:  Est : 0.2075
+BEST: 0.5409 ['Pat']
+
+GAIN:  Alt : 0.1092
+GAIN:  Bar : 0.0
+GAIN:  Fri : 0.1092
+GAIN:  Hun : 0.2516
+GAIN:  Price : 0.2516
+GAIN:  Rain : 0.0441
+GAIN:  Res : 0.2516
+GAIN:  Type : 0.2516
+GAIN:  Est : 0.2516
+BEST: 0.2516 ['Hun', 'Price', 'Res', 'Type', 'Est']
+
+GAIN:  Alt : 0.0
+GAIN:  Bar : 0.0
+GAIN:  Fri : 0.3113
+GAIN:  Price : 0.3113
+GAIN:  Rain : 0.3113
+GAIN:  Res : 0.3113
+GAIN:  Type : 0.5
+GAIN:  Est : 0.0
+BEST: 0.5 ['Type']
+
+GAIN:  Alt : 0.0
+GAIN:  Bar : 0.0
+GAIN:  Fri : 1.0
+GAIN:  Price : 0.0
+GAIN:  Rain : 1.0
+GAIN:  Res : 0.0
+GAIN:  Est : 1.0
+BEST: 1.0 ['Fri', 'Rain', 'Est']
+
+Pat=None
+   No
+Pat=Some
+   Yes
+Pat=Full
+   Hun=Yes
+      Type=French
+         None
+      Type=Thai
+         Fri=Yes
+            Yes
+         Fri=No
+            No
+      Type=Burger
+         Yes
+      Type=Italian
+         No
+   Hun=No
+      No
+['Pat', {'None': ['Ans', 'No'], 'Some': ['Ans', 'Yes'], 'Full': ['Hun', {'No': ['Ans', 'No'], 'Yes': ['Type', {'Thai': ['Fri', {'No': ['Ans', 'No'], 'Yes': ['Ans', 'Yes']}], 'Italian': ['Ans', 'No'], 'French': ['Ans', 'None'], 'Burger': ['Ans', 'Yes']}]}]}]

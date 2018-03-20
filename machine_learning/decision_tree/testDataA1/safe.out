@@ -1,0 +1,36 @@
+GAIN:  Skin : 0.0488
+GAIN:  Colour : 0.2325
+GAIN:  Size : 0.0193
+GAIN:  Flesh : 0.0286
+BEST: 0.2325 ['Colour']
+
+GAIN:  Skin : 0.2917
+GAIN:  Size : 0.4696
+GAIN:  Flesh : 0.0617
+BEST: 0.4696 ['Size']
+
+GAIN:  Skin : 0.9183
+GAIN:  Flesh : 0.2516
+BEST: 0.9183 ['Skin']
+
+GAIN:  Skin : 0.2516
+GAIN:  Size : 0.9183
+GAIN:  Flesh : 0.0
+BEST: 0.9183 ['Size']
+
+Colour=Red
+   Size=Large
+      Skin=Hairy
+         Safe
+      Skin=Smooth
+         Dangerous
+   Size=Small
+      Safe
+Colour=Green
+   Size=Large
+      Safe
+   Size=Small
+      Dangerous
+Colour=Brown
+   Safe
+['Colour', {'Brown': ['Ans', 'Safe'], 'Green': ['Size', {'Small': ['Ans', 'Dangerous'], 'Large': ['Ans', 'Safe']}], 'Red': ['Size', {'Small': ['Ans', 'Safe'], 'Large': ['Skin', {'Smooth': ['Ans', 'Dangerous'], 'Hairy': ['Ans', 'Safe']}]}]}]

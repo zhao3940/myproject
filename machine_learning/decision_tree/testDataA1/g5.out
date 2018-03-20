@@ -1,0 +1,56 @@
+GAIN:  Outlook : 0.2628
+GAIN:  Temp : 0.0505
+GAIN:  Humidity : 0.0452
+GAIN:  Wind : 0.0334
+BEST: 0.2628 ['Outlook']
+
+GAIN:  Temp : 0.571
+GAIN:  Humidity : 0.971
+GAIN:  Wind : 0.02
+BEST: 0.971 ['Humidity']
+
+GAIN:  Temp : 0.0976
+GAIN:  Humidity : 0.0924
+GAIN:  Wind : 0.2657
+BEST: 0.2657 ['Wind']
+
+GAIN:  Temp : 0.9183
+GAIN:  Humidity : 0.0
+BEST: 0.9183 ['Temp']
+
+GAIN:  Temp : 0.0
+GAIN:  Humidity : 0.0
+BEST: 0.0 ['Temp', 'Humidity']
+
+GAIN:  Humidity : 0.0
+BEST: 0.0 ['Humidity']
+
+***  out of features ***
+Outlook=Sunny
+   Humidity=Dry
+      Play
+   Humidity=Humid
+      Noplay
+Outlook=Overcast
+   Play
+Outlook=Rain
+   Wind=Calm
+      Temp=Cool
+         Play
+      Temp=Warm
+         Play
+      Temp=Hot
+         Noplay
+   Wind=Breezy
+      Temp=Cool
+         None
+      Temp=Warm
+         Humidity=Dry
+            None
+         Humidity=Humid
+            Noplay
+      Temp=Hot
+         None
+   Wind=Windy
+      Noplay
+['Outlook', {'Sunny': ['Humidity', {'Dry': ['Ans', 'Play'], 'Humid': ['Ans', 'Noplay']}], 'Overcast': ['Ans', 'Play'], 'Rain': ['Wind', {'Windy': ['Ans', 'Noplay'], 'Breezy': ['Temp', {'Cool': ['Ans', 'None'], 'Hot': ['Ans', 'None'], 'Warm': ['Humidity', {'Dry': ['Ans', 'None'], 'Humid': ['Ans', 'Noplay']}]}], 'Calm': ['Temp', {'Cool': ['Ans', 'Play'], 'Hot': ['Ans', 'Noplay'], 'Warm': ['Ans', 'Play']}]}]}]

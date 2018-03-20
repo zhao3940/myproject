@@ -1,0 +1,22 @@
+4
+Income 3 Low Medium High
+Age 2 Young Old
+Education 3 HighSchool College University
+MatStat 2 Single Married
+Ans 3 Low Medium High
+15
+Low    Old   University Married Low   
+Medium Young College    Single  Medium
+Low    Old   University Married Low   
+High   Young University Single  High  
+Low    Old   University Married Low   
+High   Young College    Single  Medium
+Medium Young College    Married Medium
+Medium Old   HighSchool Single  Low   
+High   Old   University Single  High  
+Low    Old   HighSchool Married Low   
+Medium Young College    Married Medium
+Medium Old   HighSchool Single  Low   
+High   Old   University Single  High  
+Low    Old   HighSchool Married Low   
+Medium Young College    Married Medium

@@ -1,0 +1,16 @@
+3
+Deadline 3 None Near Urgent
+Party 2 No Yes
+Lazy 2 No Yes
+Ans 4 Party Study Pub TV
+10
+Urgent Yes Yes Party
+Urgent No Yes Study
+Near Yes Yes Party
+None Yes No Party
+None No Yes Pub
+None Yes No Party
+Near No No Study
+Near No Yes TV
+Near Yes Yes Party
+Urgent No No Study

@@ -1,0 +1,9 @@
+2
+A   2 False   True
+B   2 False   True
+Ans 2 False   True
+4
+False False False
+False True  True 
+True  False True 
+True  True  False
