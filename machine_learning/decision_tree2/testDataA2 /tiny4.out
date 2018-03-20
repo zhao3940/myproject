@@ -1,0 +1,4 @@
+cat:no   dog:no   Ans:sad   sad Equal
+cat:no   dog:yes   Ans:happy   happy Equal
+cat:yes   dog:no   Ans:sad   sad Equal
+cat:yes   dog:yes   Ans:happy   happy Equal

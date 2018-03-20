@@ -1,0 +1,10 @@
+Deadline:Urgent   Party:Yes   Lazy:Yes   Ans:Party   Party Equal
+Deadline:Urgent   Party:No   Lazy:Yes   Ans:Study   Study Equal
+Deadline:Near   Party:Yes   Lazy:Yes   Ans:Party   Party Equal
+Deadline:None   Party:Yes   Lazy:No   Ans:Party   Party Equal
+Deadline:None   Party:No   Lazy:Yes   Ans:Pub   Pub Equal
+Deadline:None   Party:Yes   Lazy:No   Ans:Party   Party Equal
+Deadline:Near   Party:No   Lazy:No   Ans:Study   Study Equal
+Deadline:Near   Party:No   Lazy:Yes   Ans:TV   TV Equal
+Deadline:Near   Party:Yes   Lazy:Yes   Ans:Party   Party Equal
+Deadline:Urgent   Party:No   Lazy:No   Ans:Study   Study Equal

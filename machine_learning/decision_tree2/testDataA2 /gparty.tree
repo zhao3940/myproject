@@ -1,0 +1,1 @@
+['Party', {'Yes': ['Ans', 'Party'], 'No': ['Deadline', {'Near': ['Lazy', {'Yes': ['Ans', 'TV'], 'No': ['Ans', 'Study']}], 'Urgent': ['Ans', 'Study'], 'None': ['Ans', 'Pub']}]}]

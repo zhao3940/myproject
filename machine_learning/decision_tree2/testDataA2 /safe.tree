@@ -1,0 +1,1 @@
+['Colour', {'Red': ['Size', {'Large': ['Skin', {'Smooth': ['Ans', 'Dangerous'], 'Hairy': ['Ans', 'Safe']}], 'Small': ['Ans', 'Safe']}], 'Green': ['Size', {'Large': ['Ans', 'Safe'], 'Small': ['Ans', 'Dangerous']}], 'Brown': ['Ans', 'Safe']}]

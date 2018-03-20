@@ -1,0 +1,1 @@
+['Outlook', {'Overcast': ['Ans', 'Play'], 'Rain': ['Wind', {'Calm': ['Ans', 'Play'], 'Breezy': ['Ans', 'Noplay'], 'Windy': ['Ans', 'Noplay']}], 'Sunny': ['Humidity', {'Dry': ['Ans', 'Play'], 'Humid': ['Ans', 'Noplay']}]}]

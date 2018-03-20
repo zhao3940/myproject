@@ -1,0 +1,10 @@
+2
+cat 2 yes no
+dog 2 yes no
+Ans 4 happy sad angry fearful
+5
+no  no  sad
+no  yes happy
+yes no  sad
+yes yes angry
+yes yes sad

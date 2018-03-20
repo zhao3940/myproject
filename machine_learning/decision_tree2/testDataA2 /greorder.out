@@ -1,0 +1,15 @@
+Humidity:Dry   Temp:Cool   Wind:Windy   Outlook:Overcast   Ans:Play   Play Equal
+Humidity:Humid   Temp:Hot   Wind:Calm   Outlook:Overcast   Ans:Play   Play Equal
+Humidity:Humid   Temp:Hot   Wind:Calm   Outlook:Overcast   Ans:Play   Play Equal
+Humidity:Humid   Temp:Warm   Wind:Windy   Outlook:Overcast   Ans:Play   Play Equal
+Humidity:Dry   Temp:Cool   Wind:Windy   Outlook:Rain   Ans:Noplay   Noplay Equal
+Humidity:Humid   Temp:Cool   Wind:Calm   Outlook:Rain   Ans:Play   Play Equal
+Humidity:Humid   Temp:Warm   Wind:Breezy   Outlook:Rain   Ans:Noplay   Noplay Equal
+Humidity:Humid   Temp:Warm   Wind:Calm   Outlook:Rain   Ans:Play   Play Equal
+Humidity:Humid   Temp:Warm   Wind:Calm   Outlook:Rain   Ans:Play   Play Equal
+Humidity:Humid   Temp:Warm   Wind:Windy   Outlook:Rain   Ans:Noplay   Noplay Equal
+Humidity:Dry   Temp:Cool   Wind:Calm   Outlook:Sunny   Ans:Play   Play Equal
+Humidity:Humid   Temp:Hot   Wind:Calm   Outlook:Sunny   Ans:Noplay   Noplay Equal
+Humidity:Humid   Temp:Hot   Wind:Windy   Outlook:Sunny   Ans:Noplay   Noplay Equal
+Humidity:Dry   Temp:Warm   Wind:Windy   Outlook:Sunny   Ans:Play   Play Equal
+Humidity:Humid   Temp:Warm   Wind:Calm   Outlook:Sunny   Ans:Noplay   Noplay Equal

@@ -1,0 +1,7 @@
+cat:no   dog:no   Ans:sad   sad Equal
+cat:no   dog:yes   Ans:happy   happy Equal
+cat:no   dog:yes   Ans:fearful   happy NotEqual
+cat:yes   dog:no   Ans:sad   sad Equal
+cat:yes   dog:yes   Ans:angry   sad NotEqual
+cat:yes   dog:yes   Ans:sad   sad Equal
+cat:yes   dog:yes   Ans:fearful   sad NotEqual

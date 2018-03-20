@@ -1,0 +1,1 @@
+['Temp', {'Cool': ['Ans', 'Play'], 'Hot': ['Ans', 'Noplay'], 'Warm': ['Humidity', {'Humid': ['Ans', 'Noplay'], 'Dry': ['Ans', 'Play']}]}]

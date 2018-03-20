@@ -1,0 +1,1 @@
+['cat', {'yes': ['dog', {'yes': ['Ans', 'sad'], 'no': ['Ans', 'sad']}], 'no': ['dog', {'yes': ['Ans', 'happy'], 'no': ['Ans', 'sad']}]}]

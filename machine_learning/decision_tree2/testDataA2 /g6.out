@@ -1,0 +1,16 @@
+Outlook:Overcast   Temp:Cool   Humidity:Dry   Wind:Windy   Ans:Play   Play Equal
+Outlook:Overcast   Temp:Hot   Humidity:Humid   Wind:Calm   Ans:Play   Play Equal
+Outlook:Overcast   Temp:Hot   Humidity:Humid   Wind:Calm   Ans:Play   Play Equal
+Outlook:Overcast   Temp:Warm   Humidity:Humid   Wind:Windy   Ans:Play   Play Equal
+Outlook:Rain   Temp:Cool   Humidity:Dry   Wind:Windy   Ans:Noplay   Noplay Equal
+Outlook:Rain   Temp:Cool   Humidity:Humid   Wind:Calm   Ans:Play   Play Equal
+Outlook:Rain   Temp:Hot   Humidity:Humid   Wind:Calm   Ans:Noplay   Noplay Equal
+Outlook:Rain   Temp:Hot   Humidity:Humid   Wind:Breezy   Ans:Noplay   Noplay Equal
+Outlook:Rain   Temp:Warm   Humidity:Humid   Wind:Breezy   Ans:Noplay   Noplay Equal
+Outlook:Rain   Temp:Warm   Humidity:Humid   Wind:Calm   Ans:Play   Play Equal
+Outlook:Rain   Temp:Warm   Humidity:Humid   Wind:Windy   Ans:Noplay   Noplay Equal
+Outlook:Sunny   Temp:Cool   Humidity:Dry   Wind:Calm   Ans:Play   Play Equal
+Outlook:Sunny   Temp:Hot   Humidity:Humid   Wind:Calm   Ans:Noplay   Noplay Equal
+Outlook:Sunny   Temp:Hot   Humidity:Humid   Wind:Windy   Ans:Noplay   Noplay Equal
+Outlook:Sunny   Temp:Warm   Humidity:Dry   Wind:Windy   Ans:Play   Play Equal
+Outlook:Sunny   Temp:Warm   Humidity:Humid   Wind:Calm   Ans:Noplay   Noplay Equal

@@ -1,0 +1,16 @@
+Skin:Hairy   Colour:Brown   Size:Large   Flesh:Hard   Ans:Safe   Safe Equal
+Skin:Hairy   Colour:Green   Size:Large   Flesh:Hard   Ans:Safe   Safe Equal
+Skin:Smooth   Colour:Red   Size:Large   Flesh:Soft   Ans:Dangerous   Dangerous Equal
+Skin:Hairy   Colour:Green   Size:Large   Flesh:Soft   Ans:Safe   Safe Equal
+Skin:Hairy   Colour:Red   Size:Small   Flesh:Hard   Ans:Safe   Safe Equal
+Skin:Smooth   Colour:Red   Size:Small   Flesh:Hard   Ans:Safe   Safe Equal
+Skin:Smooth   Colour:Brown   Size:Small   Flesh:Hard   Ans:Safe   Safe Equal
+Skin:Hairy   Colour:Green   Size:Small   Flesh:Soft   Ans:Dangerous   Dangerous Equal
+Skin:Smooth   Colour:Green   Size:Small   Flesh:Hard   Ans:Dangerous   Dangerous Equal
+Skin:Hairy   Colour:Red   Size:Large   Flesh:Hard   Ans:Safe   Safe Equal
+Skin:Smooth   Colour:Brown   Size:Large   Flesh:Soft   Ans:Safe   Safe Equal
+Skin:Smooth   Colour:Green   Size:Small   Flesh:Soft   Ans:Dangerous   Dangerous Equal
+Skin:Hairy   Colour:Red   Size:Small   Flesh:Soft   Ans:Safe   Safe Equal
+Skin:Smooth   Colour:Red   Size:Large   Flesh:Hard   Ans:Dangerous   Dangerous Equal
+Skin:Smooth   Colour:Red   Size:Small   Flesh:Hard   Ans:Safe   Safe Equal
+Skin:Hairy   Colour:Green   Size:Small   Flesh:Hard   Ans:Dangerous   Dangerous Equal

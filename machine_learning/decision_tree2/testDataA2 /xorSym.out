@@ -1,0 +1,4 @@
+A:False   B:False   Ans:False   False Equal
+A:False   B:True   Ans:True   True Equal
+A:True   B:False   Ans:True   True Equal
+A:True   B:True   Ans:False   False Equal
