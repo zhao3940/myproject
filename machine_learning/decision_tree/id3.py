@@ -73,6 +73,7 @@ def count(data, feature, value):
     return num
 
 
+# what is the entropy of a question about feature?
 # sum the entropy over the possible values of the feature.
 def entropy(data, feature):
     lens=len(data)
