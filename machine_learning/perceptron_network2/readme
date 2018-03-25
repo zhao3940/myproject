@@ -1,0 +1,15 @@
+1.Build a neural network in C/C++ with a single hidden layer 
+2.two programs called nn and nnoneof. The code for the two are very similar but just a tiny bit different in the output section. 
+nn 
+Compute the output matrix for the test data Then for each test case it will print out on one line the unscaled input test case followed output using learned V and W matrices but each output element will be run through the step function:
+if (x>.5) return 1.0; else return 0.0;
+nnoneof
+The nnoneof program is assumes that there are multiple channels of output and that the desired value is the index of the channel with the maximum element. So the program is exactly the same as the nn program except that for the output is the index of the maximum element of the output vector. For example if the outputs for a given row of input are 1.414 2.718 3.14 1.618 then the answer is 2 which is the index of the 3rd element (zero based array). 
+3.run
+	under linux or macos 
+	commands to complie and run:
+	
+	make nn 
+	make nnoneof
+	./nn < testdata
+	./nnoneof < testdata
