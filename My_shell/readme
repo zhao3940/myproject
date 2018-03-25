@@ -1,0 +1,28 @@
+# Introduction
+A simple simulation of shell in Linux
+And this sample shell has many bugs  
+when you run this shell, the shell would read input from input file, and you could contral it
+# Usage
+1.type gcc -o msh msh.c 
+2. type msh to run the shell
+3. tyoe exit to exit the shell
+# Attention
+This shell only can run single commands or command with less than 5 arguments 
+     *format
+     1. command_name
+     2. command_name agr[0]
+     3. command_name agr[0] agr[1]
+     4. command_name agr[0] agr[1] agr[2]
+     5. command_name agr[0] agr[1] agr[2] agr[3]
+#command 
+	 1. alias : there are space between "=", and only singl word work for alias, e.g., alias ns = ls -al
+	2. PATH : type PATH you could see the information
+	3. export PATH = $PATH   local path extension, there are spaces between "=", and  local path extension start with :/ and there are space between sPATH and  local path extension.
+	4. history: !! ![ ]  would be not in history, and it could display last 30 item history and start with number 0.
+	if the total items are bigger than 30, the newest item would cover the oldest iterm.
+	So, only last 30 item history would work for this shell. if you type !31, in fact the shell would excuate number 1 command line which weres tored 
+# File List
+ msh.c : main program
+ mshrc : test file, you could change file to change the output of program 
+ readme
+

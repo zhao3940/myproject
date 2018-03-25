@@ -1,0 +1,14 @@
+ll
+^l^s
+la
+^a^s
+pwd
+!!
+alias ll = ls -l
+ll
+!4
+PATH
+export PATH = $PATH :/home/wei/bin/CS240
+PATH
+ls -al | more
+exit
