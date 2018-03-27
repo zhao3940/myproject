@@ -49,27 +49,27 @@ void Graphics:: load_banana(int width,int heigh,Banana *banana)
 
 void Graphics::load_platform(Platform *platform)
 {
-    //platform->setPixmap(QPixmap(":/images/platform.png"));
+    platform->setPixmap(QPixmap(":/images/platform_.png"));
 }
 
 
 void Graphics:: load_platform(int width,int heigh,Platform *platform)
 {
-   /* QPixmap pixmap(":/images/platform.png");
+    QPixmap pixmap(":/images/platform_.png");
     pixmap = pixmap.scaled(width,heigh,Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
     platform->setPixmap(pixmap);
-    */
+    
 }
 
 void Graphics::load_steam(Steam *steam)
 {
-    steam->setPixmap(QPixmap(":/images/steam.png"));
+    steam->setPixmap(QPixmap(":/images/steam_.png"));
 }
 
 
 void Graphics:: load_steam(int width,int heigh,Steam *steam)
 {
-    QPixmap pixmap(":/images/platform.png");
+    QPixmap pixmap(":/images/steam_.png");
     pixmap = pixmap.scaled(width,heigh,Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
     steam->setPixmap(pixmap);
 }

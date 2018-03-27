@@ -11,9 +11,11 @@
 #include <QGraphicsPixmapItem>
 #include <QGraphicsItem>
 #include "wz_graphics.h"
+#include "mm_soundmanager.h"
 
 #define UPDATE_MS 50
 
+#define PLAYER_IMMUNE_DURATION 20
 #define DEFAULT_POS_X 30 
 #define DEFAULT_POS_Y 30
 #define DEFAULT_VEL_X 10
@@ -40,56 +42,12 @@
 
 // forward declarations
 class Graphics;
+class SoundManager;
 
 // structs
 struct Velocity {
     int x;
     int y;
-};
-
-
-
-// Platform - maybe use Draw/Paint() instead of an image
-class Platform: public QGraphicsRectItem {
-public:
-    Platform(QGraphicsItem *parent=0);
-    Platform(int pos_x, int pos_y, QGraphicsItem *parent=0);
-    Platform(int width, int height, int pos_x, int pos_y, 
-             QGraphicsItem *parent=0);
-
-private:
-    void init();
-
-};
-
-// Shark - needs to move 
-class Shark: public QObject, public QGraphicsPixmapItem
-{
-    Q_OBJECT
-public:
-    Shark(QGraphicsItem *parent=0);
-    Shark(int pos_x, int pos_y, QGraphicsItem *parent=0);
-    Shark(int pos_x, int pos_y, int vel_x, int vel_y, 
-          QGraphicsItem *parent=0);
-    Shark(int width, int height, int pos_x, int pos_y, int vel_x, int vel_y, 
-          QGraphicsItem *parent=0);
-
-    bool stun(int time=DEFAULT_STUN_DURATION);
-    bool cook();
-
-public slots:
-    void move();
-    void status();
-
-private:
-    void init();
-
-    bool cooked;
-    int stunned;
-    struct Velocity vel;
-
-    QTimer *timer;
-    Graphics *graphics;
 };
 
 // Banana 
@@ -120,6 +78,74 @@ private:
     QTimer *timer;
 };
 
+// Exit Object - needs to check whether play has collided with it
+class Exit: public QObject, public QGraphicsPixmapItem {
+    Q_OBJECT
+public:
+    Exit(QGraphicsItem *parent=0);
+    Exit(int pos_x, int pos_y, QGraphicsItem *parent=0);
+    Exit(int width, int height, int pos_x, int pos_y, QGraphicsItem *parent=0);
+
+public slots:
+    void status();
+
+private:
+    void init();
+
+    QTimer *timer;
+    Graphics *graphics;
+};
+
+
+
+// Platform - maybe use Draw/Paint() instead of an image
+//class Platform: public QGraphicsRectItem {
+class Platform: public QGraphicsPixmapItem {
+public:
+    Platform(QGraphicsItem *parent=0);
+    Platform(int pos_x, int pos_y, QGraphicsItem *parent=0);
+    Platform(int width, int pos_x, int pos_y, 
+             QGraphicsItem *parent=0);
+
+private:
+    void init();
+
+    Graphics *graphics;
+
+};
+
+// Shark - needs to move 
+class Shark: public QObject, public QGraphicsPixmapItem
+{
+    Q_OBJECT
+public:
+    Shark(QGraphicsItem *parent=0);
+    Shark(int pos_x, int pos_y, QGraphicsItem *parent=0);
+    Shark(int pos_x, int pos_y, int vel_x, int vel_y, 
+          QGraphicsItem *parent=0);
+    Shark(int width, int height, int pos_x, int pos_y, int vel_x, int vel_y, 
+          QGraphicsItem *parent=0);
+
+    bool stun(int time=DEFAULT_STUN_DURATION);
+    bool cook();
+
+public slots:
+    void move();
+    void status();
+
+private:
+    void init();
+
+    bool cooked;
+    int stunned;
+    int sound_count;
+    struct Velocity vel;
+
+    QTimer *timer;
+    Graphics *graphics;
+    SoundManager *sound;
+};
+
 // Steam needs to check if SomeObject collided with it
 class Steam: public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
@@ -136,24 +162,6 @@ private:
 
     bool exploded;
     int countdown;
-    QTimer *timer;
-    Graphics *graphics;
-};
-
-// Exit Object - needs to check whether play has collided with it
-class Exit: public QObject, public QGraphicsPixmapItem {
-    Q_OBJECT
-public:
-    Exit(QGraphicsItem *parent=0);
-    Exit(int pos_x, int pos_y, QGraphicsItem *parent=0);
-    Exit(int width, int height, int pos_x, int pos_y, QGraphicsItem *parent=0);
-
-public slots:
-    void status();
-
-private:
-    void init();
-
     QTimer *timer;
     Graphics *graphics;
 };
