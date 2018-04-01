@@ -1,0 +1,6 @@
+1.this pca program read a picture in to a R by C matrix and 
+  using PCA algorithm to compress it fewer then C dimension.
+2.Running commands:
+  make pca
+  ./pca < inputfile
+
