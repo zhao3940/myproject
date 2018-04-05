@@ -1,3 +1,8 @@
+/********************************
+ *     MainWindow.h
+ *     Chaeun Kim
+ ********************************/
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -13,8 +18,7 @@
 #include "kk_scenemanager.h"
 
 
-class MainWindow :public QGraphicsView
-{
+class MainWindow :public QGraphicsView {
     Q_OBJECT
 public:
     MainWindow();
@@ -22,28 +26,30 @@ public:
     void gameplay();
 
 private:
-    void bringGameOverScene();
+    void bring_gameover_scene();
+
     QGraphicsScene * scene;
     QGraphicsPixmapItem *logo;
 
-    Button *playBtn;
-    Button *replayBtn;
-    Button *quitBtn;
-    Button *demoBtn;
-    Button *stressBtn;
+    Button *play_button;
+    Button *replay_button;
+    Button *quit_button;
+    Button *demo_button;
+    Button *stress_button;
 
-    SceneManager * gamescene;
+    SceneManager * game_scene;
 
-    SoundManager * backgroundMusic;
+    SoundManager * background_music;
 
     int WID_WIDTH;
     int WID_HEI;
 
 public slots:
     void start();
+    void restart();
     void start_demo();
     void start_stress();
-    void displayGameover();
+    void display_gameover();
 };
 
 

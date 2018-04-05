@@ -3,13 +3,23 @@
 
 #endif // GAMELEVEL_H
 
+//#include "kk_levelitem.h"
+
+#include <QString>
+#include <QFile>
+#include<QList>
+#include <stdlib.h>
+
+class LevelItem;
+
 class GameLevel
 {
 public:
-    GameLevel();
-    void loadHighestScore();
-    void updateHighesrScore();
+    GameLevel(const QString &filename);
+    QList<LevelItem>* get_levels_items();
 private:
-    int levelNumber;
-    int highestScore;
+    void parse_level_file(const QString &filename);
+    void parse(const QString& line);
+    QString level, score;
+    QList<LevelItem> *level_items = new QList<LevelItem>();
 };

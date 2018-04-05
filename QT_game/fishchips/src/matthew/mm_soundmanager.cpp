@@ -5,127 +5,129 @@
 
 SoundManager::SoundManager()
 {
-
-
-    //music.setMedia(QUrl("qrc:/sounds/background.wav"));
-    //music.play();
-
+//The constructor does not do anything
 }
 
-void SoundManager::playBackground()
+void SoundManager::play_background()
 {
 
+    //A playlist is used to put the background music in a continual loop rather than playing once
     QMediaPlaylist *playlist = new QMediaPlaylist();
-    playlist->addMedia(QUrl(backgroundPath));
-    playlist->setPlaybackMode(QMediaPlaylist::Loop);
+    playlist->addMedia( QUrl( background_path ) );
+    playlist->setPlaybackMode( QMediaPlaylist::Loop );
 
+    music1 = new QMediaPlayer();
+    //The volume is set to 20% since it is very loud otherwise
+    music1->setVolume(20);
+    music1->setPlaylist( playlist );
+    music1->play();
+
+
+}
+
+//Each of these functions declares a qmedia player, passes the path to its respective sound file, and then plays the file.
+//The file paths are the member variables of the SoundManager class
+
+void SoundManager::play_bump()
+{
     QMediaPlayer *music = new QMediaPlayer();
-    music->setPlaylist(playlist);
+
+    music->setMedia( QUrl( bump_path ) );
+
     music->play();
 
 
 }
 
-void SoundManager::playBump()
-{
-    QMediaPlayer *music = new QMediaPlayer();
-
-    music->setMedia(QUrl(bumpPath));
-
-    music->play();
-
-
-}
-
-void SoundManager::playChomp()
+void SoundManager::play_chomp()
 {
 
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(chompPath));
+    music->setMedia( QUrl( chomp_path ) );
 
     music->play();
 
 }
 
-void SoundManager::playDie()
+void SoundManager::play_die()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(diePath));
+    music->setMedia( QUrl ( die_path ) );
 
     music->play();
 }
 
-void SoundManager::playEat()
+void SoundManager::play_eat()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(eatPath));
+    music->setMedia( QUrl( eat_path ) );
 
     music->play();
 
 }
 
-void SoundManager::playEnd()
+void SoundManager::play_end()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(endPath));
+    music->setMedia( QUrl( end_path ) );
 
     music->play();
 }
 
-void SoundManager::playHit()
+void SoundManager::play_hit()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(hitPath));
+    music->setMedia( QUrl( hit_path ) );
 
     music->play();
 }
 
-void SoundManager::playLevelup()
+void SoundManager::play_levelup()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(levelupPath));
+    music->setMedia( QUrl( levelup_path ) );
 
     music->play();
 }
 
-void SoundManager::playPickup()
+void SoundManager::play_pickup()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(pickupPath));
+    music->setMedia( QUrl( pickup_path ) );
 
     music->play();
 }
 
-void SoundManager::playStart()
+void SoundManager::play_start()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(startPath));
+    music->setMedia( QUrl( start_path ) );
 
     music->play();
 }
 
-void SoundManager::playSteam()
+void SoundManager::play_steam()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(steamPath));
+    music->setMedia( QUrl( steam_path ) );
 
     music->play();
 }
 
-void SoundManager::playThrow()
+void SoundManager::play_throw()
 {
     QMediaPlayer *music = new QMediaPlayer();
 
-    music->setMedia(QUrl(throwPath));
+    music->setMedia( QUrl( throw_path ) );
 
     music->play();
 }
