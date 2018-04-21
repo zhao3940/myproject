@@ -1,0 +1,30 @@
+KDTree version of matrix(size of kd tree: 5 X 3)
+ant 5 2 
+bat 2 5 
+cow 5 5 
+dog 8 5 
+elk 5 8 
+
+
+SOLVE:     0.50     1.00 
+RANGE: 0  to  4
+RANGE: 0  to  1
+BESTPARENT1(2):    4.610 0
+RANGE: 1  to  1
+BESTLEAF:    4.272 1
+Ans:     2.00     5.00  1 bat
+
+SOLVE:     1.50     2.00 
+RANGE: 0  to  4
+RANGE: 0  to  1
+BESTPARENT1(2):    3.500 0
+RANGE: 1  to  1
+BESTLEAF:    3.041 1
+Ans:     2.00     5.00  1 bat
+
+SOLVE:     2.50     3.00 
+RANGE: 0  to  4
+RANGE: 0  to  1
+RANGE: 1  to  1
+BESTLEAF:    2.062 1
+Ans:     2.00     5.00  1 bat
